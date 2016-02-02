@@ -1,0 +1,32 @@
+.container-fluid
+  .col-md-12.text-center.green-text
+    %h2 Alumnos Registrados
+  %table.table.table-bordered.table-hover.text-center
+    %thead
+      %tr
+        %th.text-center Número de Control
+        %th.text-center Nombre
+        %th.text-center Apellidos
+        %th.text-center Email
+        %th.text-center Teléfono
+        %th.text-center Celular
+        %th
+        %th
+        %th
+
+    %tbody
+      - @students.each do |student|
+        %tr
+          %td= link_to student.control, student
+          %td= link_to student.nombre, student
+          %td= student.appelidos
+          %td= student.email
+          %td= student.telefono
+          %td= student.celular
+          %td= link_to 'Mostrar', student
+          %td= link_to 'Editar', edit_student_path(student)
+          %td= link_to 'Eliminar', student, :method => :delete, :data => { :confirm => 'Estás seguro?' }
+
+  %br
+
+  = link_to 'Agregar Estudiante', new_student_path

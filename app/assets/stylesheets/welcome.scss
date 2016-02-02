@@ -1,0 +1,353 @@
+@import "bootstrap";
+
+.slider {
+    width: 100%;
+    height: 580px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 600px;
+}
+
+.slider ul {
+    width: 300%;
+    padding: 0;
+    display: flex;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: step-start;
+    -moz-animation: cambio 20s infinite alternate;
+    -moz-animation-timing-function: step-start;
+    -webkit-animation: cambio 20s infinite alternate;
+    -webkit-animation-timing-function: step-start;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@-moz-keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+@-webkit-keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+    
+    35% { margin-left: -100%;}
+    65% { margin-left: -100%;}
+    
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
+}
+
+/* Colores */
+.white-text {
+    color: #FFFFFF;
+}
+.bg-white {
+    background-color: #FFFFFF;
+}
+.black-text {
+    color: #000;
+}
+.bg-black {
+    background-color: #000;
+}
+.green-text {
+    color: #009688;
+}
+.bg-green {
+    background-color: #009688;
+}
+.gray-text {
+    color: #949494;
+}
+.bg-gray {
+    background-color: #b1b1b1;
+}
+.bg-suc {
+    background-color: #EEEEEE !important;
+}
+.suc-text {
+    color: #4CAF50;
+}
+.transparente {
+    background-color: transparent !important;
+}
+.orange-text {
+    color: orange;
+}
+.bg-orange {
+    background-color: orange;
+}
+.blue-text {
+    color: blue;
+}
+.bg-blue {
+    background-color: blue !important;
+}
+.navy-text {
+    color: navy;
+}
+.bg-navy {
+    background-color: navy !important;
+}
+
+/* Tamaño de letras */
+@font-face {
+    font-family: helvetica;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 2em;
+}
+
+/* Paddings */
+.padding-xs {
+    padding: 10px;
+}
+.padding-sm {
+    padding: 20px;
+}
+.bottom-padding {
+    padding-bottom: 2em;
+}
+.bottom-padding-xs {
+    padding-bottom: 1.3em;
+}
+.bottom-padding-md {
+    padding-bottom: 4.7em;
+}
+.top-padding {
+    padding-top: 2em;
+}
+.no-padding {
+    padding: 0;
+}
+
+/* Margenes */
+.no-space {
+    margin: 0;
+    padding: 0;
+}
+.small-margin {
+    margin-top: 20px;
+}
+.top-margin {
+    margin-top: 2em;
+}
+.top-margin-md {
+    margin-top: 4em;
+}
+.bottom-margin {
+    margin-bottom: 1em;
+}
+.bottom-margin-md {
+    margin-bottom: 2em;
+}
+.margin-left {
+    margin-left: 20px;
+}
+
+/* Bordes */
+.border {
+    border: 2px solid #fff;
+}
+.border-black {
+    border: 2px solid #000;
+}
+.border-bottom {
+    border-bottom: 2px solid #fff;
+}
+.border-top {
+    border-top: 2px solid #fff;
+}
+
+/* Alineación */
+.circle {
+    width: 37%;
+    border-radius: 50%;
+}
+.circle:hover {
+    opacity: .9;
+}
+
+.presentacion a:hover {
+    border-bottom: 1px solid navy;
+}
+
+.logo img {
+    width: 100%;
+}
+.imagen img {
+    width: 100%;
+    height: 200px;
+}
+.puntero {
+    cursor: pointer;
+}
+.ej a {
+    color: blue !important;
+}
+a:hover {
+    background-color: transparent;
+}
+.anuncio {
+    position: fixed;
+    bottom: -20px;
+    left: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+.activa {
+    background-color: navy;
+    color: #fff;
+    border-radius: 5px;
+}
+.cover img {
+    width: 100%;
+    height: 400px;
+}
+.opaco {
+    opacity: .7;
+}
+.opaco:hover {
+    opacity: 1;
+}
+
+/*Estilos Base*/
+.contenedor-img {
+float: left;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+background: #fff;
+}
+.contenedor-img .mascara,.contenedor-img .contenido {
+height: 200px;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0
+}
+.contenedor-img img {
+display: block;
+position: relative;
+
+}
+.contenedor-img h2 {
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+position: relative;
+font-size: 17px;
+padding: 10px;
+background: rgba(0, 0, 0, 0.9);
+margin: 20px 0 0 0
+}
+.contenedor-img p {
+font-size: 12px;
+position: relative;
+color: #fff;
+padding: 10px 20px 10px;
+text-align: center
+}
+.contenedor-img a.link {
+display: inline-block;
+text-decoration: none;
+padding: 7px 14px;
+background: #222;
+color: #fff;
+text-transform: uppercase;
+box-shadow: 0 0 1px #000
+}
+.contenedor-img a.link:hover {
+box-shadow: 0 0 5px #000
+}
+/*Ejemplo 1*/
+.ejemplo-1 img {
+transition: all 0.2s linear;
+}
+.ejemplo-1 .mascara {
+opacity: 0;
+background-color: rgba(0,0,0, 0.7);
+transition: all 0.3s ease-in-out;
+}
+.ejemplo-1 h2 {
+transform: translateX(-200px);/*Desplazamos a la izquierda*/
+opacity: 0;
+transition: all 0.7s ease-in-out;
+}
+.ejemplo-1 p {
+transform: translateX(200px);/*Desplazamos a la derecha*/
+opacity: 0;
+transition: all 0.4s linear;
+}
+.ejemplo-1:hover img {
+transform: scale(1.1);/*Damos un ligero zoom a la imagen*/
+}
+.ejemplo-1:hover .mascara {
+opacity: 1;
+}
+.ejemplo-1:hover h2,
+.ejemplo-1:hover p,
+.ejemplo-1:hover a.link {
+opacity: 1;
+transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.ejemplo-1:hover p {
+transition-delay: 0.1s;
+}
+
+img.desaturada { filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+}
+img.desaturada:hover { filter: grayscale(0);
+-webkit-filter: grayscale(0);
+-moz-filter: grayscale(0);
+-ms-filter: grayscale(0);
+-o-filter: grayscale(0);
+}
