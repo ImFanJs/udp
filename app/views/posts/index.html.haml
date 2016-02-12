@@ -33,6 +33,9 @@
     .circle.bg-gray.center-block.small-margin.padding-xs=link_to (image_tag "social.png", width: 100)
     %p.top-padding=link_to "Realiza tu servicio social"
 .container
+  .col-md-8.col-md-offset-2.top-margin-md
+    %iframe.center-block.hidden-xs{ "width":"720", "height":"350", "src":"//www.youtube.com/embed/wCmNJSuGksQ", "frameborder":"1" }
+.container
   .col-md-12.top-margin-md
     %h2.text-center.navy-text Noticias Recientes
     - @posts.each do |post|
