@@ -14,6 +14,7 @@ class CreateStudents < ActiveRecord::Migration
       t.boolean :pago
       t.string :carrera
       t.string :grupo
+      t.string :turno
 
       t.timestamps null: false
     end

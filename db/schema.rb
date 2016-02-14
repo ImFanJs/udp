@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160124034311) do
     t.boolean  "pago"
     t.string   "carrera"
     t.string   "grupo"
+    t.string   "turno"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

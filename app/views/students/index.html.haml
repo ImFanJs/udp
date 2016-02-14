@@ -7,9 +7,9 @@
         %th.text-center Número de Control
         %th.text-center Nombre
         %th.text-center Apellidos
-        %th.text-center Email
-        %th.text-center Teléfono
-        %th.text-center Celular
+        %th.text-center Carrera
+        %th.text-center Turno
+        %th.text-center Pago
         %th
         %th
         %th
@@ -20,9 +20,13 @@
           %td= link_to student.control, student
           %td= link_to student.nombre, student
           %td= student.appelidos
-          %td= student.email
-          %td= student.telefono
-          %td= student.celular
+          %td= student.carrera
+          %td= student.turno
+          %td
+            -if student.pago?
+              OK
+            -else
+              NO
           %td= link_to 'Mostrar', student
           %td= link_to 'Editar', edit_student_path(student)
           %td= link_to 'Eliminar', student, :method => :delete, :data => { :confirm => 'Estás seguro?' }
